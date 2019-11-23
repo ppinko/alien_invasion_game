@@ -15,3 +15,5 @@ bitmap (.bmp) file because Pygame loads bitmaps by default. Tools to convert oth
 	method.
 
 4) KEYUP - whenever the player holds a key4) KEYUP - whenever the player holds a key4) KEYUP - whenever the player holds a key4) KEYUP - whenever the player holds a key
+
+5) Sprite - class Sprite enables to group related elements in a game and act on all the grouped elements at once
