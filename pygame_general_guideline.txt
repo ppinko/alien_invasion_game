@@ -10,3 +10,8 @@ bitmap (.bmp) file because Pygame loads bitmaps by default. Tools to convert oth
    - To work with edges: top, bottom, left or right attributes
    - Adjusting horizontal or vertical placement of a surface: x or y coordinates (coordinates of top-left corner of a rect)
    - In Pygame, the origin (0, 0) is at the top-left corner of the screen and coordinates increase as you go down and to the right
+
+3) KEYDOWN - whenever the player presses a key, that keypress is registered in Pygame as an event. Each event is picked up by the pygame.event.get()
+	method.
+
+
