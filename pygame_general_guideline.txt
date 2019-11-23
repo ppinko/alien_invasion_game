@@ -14,4 +14,4 @@ bitmap (.bmp) file because Pygame loads bitmaps by default. Tools to convert oth
 3) KEYDOWN - whenever the player presses a key, that keypress is registered in Pygame as an event. Each event is picked up by the pygame.event.get()
 	method.
 
-
+4) KEYUP - whenever the player holds a key4) KEYUP - whenever the player holds a key4) KEYUP - whenever the player holds a key4) KEYUP - whenever the player holds a key
