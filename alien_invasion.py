@@ -3,15 +3,16 @@ from pygame.sprite import Group
 
 from settings import Settings
 from ship import Ship
+from alien import Alien
 import game_functions as gf
 
 def run_game():
     # Initialize pygame, settings and screen object
     pygame.init() # initilizing background setting
-    ai_settings = Settings()
+    ai_settings = Settings() # derive settings from settings.py
     screen = pygame.display.set_mode(
-            (ai_settings.screen_width, ai_settings.screen_height))
-    pygame.display.set_caption("Alien Invasion")
+            (ai_settings.screen_width, ai_settings.screen_height)) # initializing screen size
+    pygame.display.set_caption("Alien Invasion") # set name of the game at the top of the screen
 
     # Make a ship
     ship = Ship(ai_settings, screen)
@@ -19,14 +20,14 @@ def run_game():
     # Make a group to store bullets in
     bullets = Group() # this class behaves like a list for games with extra functionality
 
+    # Make an alien
+    alien = Alien(ai_settings, screen)
+
     # Start the main loop for the game
     while True:
-
-        # Watch for keyboard and mouse events
-        # event is an action that user perform 
         gf.check_events(ai_settings, screen, ship, bullets)
         ship.update()
         gf.update_bullets(bullets)
-        gf.update_screen(ai_settings, screen, ship, bullets)
+        gf.update_screen(ai_settings, screen, ship, alien, bullets)
         
 run_game()
