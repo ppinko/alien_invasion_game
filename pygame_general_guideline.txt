@@ -1,0 +1,12 @@
+PYGAME Module guidelines
+
+0) surface is a screen object. A surface in Pygame is a part of the screen where you display a game element.
+
+1) when choosing artwork for your games, be sure to pay attention to licensing. The safest and cheapest way to start is to use freely licensed 
+graphics that you can modify from a website like http://pixabay.com/. You can use almost any type of image, but the easiest way is to use a 
+bitmap (.bmp) file because Pygame loads bitmaps by default. Tools to convert other type of images to bitmap are eg. Photoshop, GIMP or Paint.
+
+2) - To center a game element one can use: center, centerx or centery attributes of a rect. 
+   - To work with edges: top, bottom, left or right attributes
+   - Adjusting horizontal or vertical placement of a surface: x or y coordinates (coordinates of top-left corner of a rect)
+   - In Pygame, the origin (0, 0) is at the top-left corner of the screen and coordinates increase as you go down and to the right
