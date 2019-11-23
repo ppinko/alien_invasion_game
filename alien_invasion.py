@@ -26,7 +26,7 @@ def run_game():
         # event is an action that user perform 
         gf.check_events(ai_settings, screen, ship, bullets)
         ship.update()
-        bullets.update() # call bullet.update() for each bullet in the group bullets
+        gf.update_bullets(bullets)
         gf.update_screen(ai_settings, screen, ship, bullets)
         
 run_game()
