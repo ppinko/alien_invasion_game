@@ -21,4 +21,7 @@ bitmap (.bmp) file because Pygame loads bitmaps by default. Tools to convert oth
 6) The sprite.groupcollide() method compares each bullet’s rect with each alien’s rect and returns a dictionary containing the bullets and aliens that have collided. Each key in the dictionary is a bullet, and the corresponding value is the alien that was hit.
 
 7) The method spritecollideany() takes two arguments: a sprite and a group. The method looks for any member of the group that’s collided with
-the sprite and stops looping through the group as soon as it finds one member that has collided with the sprite. Here, it loops through the group aliens and returns the first alien it finds that has collided with ship. If no collisions occur, spritecollideany() returns None and the if block at u won’t execute. If it finds an alien that’s collided with the ship, it returns that alien and the if block executes: it prints Ship hit!!! v.
+the sprite and stops looping through the group as soon as it finds one member that has collided with the sprite. Here, it loops through the group aliens and returns the first alien it finds that has collided with ship. If no collisions occur, spritecollideany() returns None and the if block at u won’t execute. If it finds an alien that’s collided with the ship, it returns that alien and the if block executes: it prints Ship hit!!!
+
+8) pygame.font - lets Pygame remder text to the screen
+
