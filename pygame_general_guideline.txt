@@ -25,3 +25,4 @@ the sprite and stops looping through the group as soon as it finds one member th
 
 8) pygame.font - lets Pygame remder text to the screen
 
+9) MOUSEBUTTONDOWN - Pygame detects a MOUSEBUTTONDOWN event when the player clicks anywhere on the screen
