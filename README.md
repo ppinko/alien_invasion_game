@@ -6,10 +6,11 @@ To start a game left mouse click on 'Start' button.
 
 To quit a game press 'q'.
 
-To move a player press:
+To move a ship:
+- left      -> press 'left'
+- right     -> press 'right'
 
-    left -> left
-    right -> right
+To shoot a bullet press 'space'.
 
-To shoot a bullet press 'space':
+![alien_invasion](https://user-images.githubusercontent.com/15100588/78504385-2ab70700-776d-11ea-92e6-c6f51ef82379.png)
 
